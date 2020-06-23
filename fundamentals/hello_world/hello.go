@@ -9,6 +9,9 @@ const helloPrefix = "Hello, "
 
 // Hello : A simple function that returns a String
 func Hello(name string) string {
+	if name == "" {
+		name = "World"
+	}
 	return helloPrefix + name
 }
 
