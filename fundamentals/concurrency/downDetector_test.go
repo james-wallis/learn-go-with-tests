@@ -14,6 +14,7 @@ func mockWebsiteChecker(url string) bool {
 }
 
 func slowStubWebsiteChecker(_ string) bool {
+	// Wait 20 milliseconds and return true, mocks HTTP request times
 	time.Sleep(20 * time.Millisecond)
 	return true
 }
